@@ -1,0 +1,12 @@
+# tomcat-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: makaan-pod
+spec:
+  containers:
+  - name: tomcat-container
+    image: tomcat:latest
+    ports:
+    - containerPort: 8080
+
