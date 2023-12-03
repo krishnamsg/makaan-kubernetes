@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        APP_NAME = "complete-prodcution-e2e-pipeline"
+        APP_NAME = "makaam-application"
       }
     stages{
         stage('Cleanup Workspace') {
@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Checkout From SCM') {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/krishnamsg/DevOps-Pipeline.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/krishnamsg/makaan-kubernetes.git'
             }
         }
         stage('Update the Deployemnt Tags') {
@@ -32,7 +32,7 @@ pipeline {
                     git commit -m "Updated deployment Manifest"
                 """
                 withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
-                    sh "git push https://github.com/krishnamsg/DevOps-Pipeline.git main"
+                    sh "git push https://github.com/krishnamsg/makaan-kubernetes.git main"
                     
                 }
             }
