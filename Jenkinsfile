@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        APP_NAME = "makaam"
+        APP_NAME = "makaan"
       }
     stages{
         stage('Cleanup Workspace') {
