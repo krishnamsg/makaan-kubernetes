@@ -17,9 +17,9 @@ pipeline {
         stage('Update the Deployemnt Tags') {
             steps {
                 sh """
-                    cat tomcat-deployment.yaml
-                    sed -i 's/${APP_NAME}.*/${APP_NAME}:${IMAGE_TAG}/g' tomcat-deployment.yaml
-                    cat tomcat-deployment.yaml
+                    cat makaan-deployment.yaml
+                    sed -i 's/${APP_NAME}.*/${APP_NAME}:${IMAGE_TAG}/g' makaan-deployment.yaml
+                    cat makaan-deployment.yaml
                 """
             }
         }
