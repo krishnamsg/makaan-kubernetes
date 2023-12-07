@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: makaan:1.0.0-13
+  name: makaan:1.0.0-14
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: makaan:1.0.0-13
+      app: makaan:1.0.0-14
   template:
     metadata:
       labels:
-        app: makaan:1.0.0-13
+        app: makaan:1.0.0-14
     spec:
       containers:
       - name: ttomcat-container
-        image: krishnamsg/makaan:1.0.0-13
+        image: krishnamsg/makaan:1.0.0-14
         ports:
         - containerPort: 8080
