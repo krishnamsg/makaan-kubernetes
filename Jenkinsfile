@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh """
                     cat makaan-deployment.yaml
-                    sed -i 's/${APP_NAME}.*/${APP_NAME}:${IMAGE_TAG}/g' makaan-deployment.yaml
+                    sed -i 's/${APP_NAME}.*/${APP_NAME}:1.0.0-7/g' makaan-deployment.yaml
                     cat makaan-deployment.yaml
                 """
             }
