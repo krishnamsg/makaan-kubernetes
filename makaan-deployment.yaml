@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: makaan-kubernetes-deployment
+  name: makaan:1.0.0-15
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: makaan-kubernetes-pipeline
+      app: makaan:1.0.0-15
   template:
     metadata:
       labels:
-        app: makaan-application-app
+        app: makaan:1.0.0-15
     spec:
       containers:
-      - name: makaan-kubernetes-pipeline
-        image: krishnamsg/makaan:1.0.0-14
+      - name: makaan:1.0.0-15
+        image: krishnamsg/makaan:1.0.0-15
         ports:
         - containerPort: 8080
