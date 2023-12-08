@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: makaan:1.0.0-18
+  name: makaan:1.0.0-19
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: makaan:1.0.0-18
+      app: makaan:1.0.0-19
   template:
     metadata:
       labels:
-        app: makaan:1.0.0-18
+        app: makaan:1.0.0-19
     spec:
       containers:
-      - name: makaan:1.0.0-18
-        image: krishnamsg/makaan:1.0.0-18
+      - name: makaan:1.0.0-19
+        image: krishnamsg/makaan:1.0.0-19
         ports:
         - containerPort: 8080
