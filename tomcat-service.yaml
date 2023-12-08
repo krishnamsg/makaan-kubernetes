@@ -5,7 +5,7 @@ metadata:
   name: complete-production-makaan-deployment
 spec:
   selector:
-    app: tomcat-makaan
+    app: tomcatcomplete-production-makaan-pipeline
   ports:
     - protocol: TCP
       port: 80
