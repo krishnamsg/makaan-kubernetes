@@ -14,7 +14,7 @@ spec:
         app: complete-production-makaan-app
     spec:
       containers:
-      - name: complete-production-e2e-makaan-pipeline
-        image: krishnamsg/complete-production-e2e-makaan-pipeline:1.0.0-19
+      - name: complete-production-e2e-makaan-pipeline:1.0.0-22
+        image: krishnamsg/complete-production-e2e-makaan-pipeline:1.0.0-22
         ports:
         - containerPort: 8080
