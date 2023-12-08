@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        APP_NAME = "makaan"
+        APP_NAME = "krishnamsg/complete-production-e2e-makaan-pipeline"
       }
     stages{
         stage('Cleanup Workspace') {
