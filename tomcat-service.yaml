@@ -2,10 +2,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: makaan-service
+  name: complete-production-makaan-deployment
 spec:
   selector:
-    app: makaan
+    app: tomcat-makaan
   ports:
     - protocol: TCP
       port: 80
